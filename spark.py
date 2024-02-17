@@ -45,6 +45,18 @@ if __name__=="__main__":
 
     most_common_call.show()
 
+    # Question 4: Zip Codes for Most Common Calls
+    zip_code = spark.sql("""SELECT `Zipcode of Incident` as zip_code FROM 
+                        fire_department WHERE `Call type` = (SELECT `Call type`
+                        FROM (SELECT `Call type`, COUNT(*) as total_call 
+                        FROM fire_department GROUP BY 1 ORDER BY 2 DESC LIMIT 1) cust) LIMIT 1""")
+
+    zip_code.show()
+
+    #Question 5: San Francisco Neighborhoods in Zip Codes 94102 and 94103
+
+
+
 
 
 
