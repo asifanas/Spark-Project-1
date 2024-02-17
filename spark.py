@@ -53,7 +53,7 @@ if __name__=="__main__":
 
     zip_code.show()
 
-    #Question 5: San Francisco Neighborhoods in Zip Codes 94102 and 94103
+    #Question 5: San Francisco Neighborhoods in Zip Codes 94102 and 94103 trying to solve using pyspark sql
 
 
 
