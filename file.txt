@@ -1,0 +1,22 @@
+Sure, here are 20 SQL-based questions you could ask about this dataset:
+
+What are the top 5 movies with the highest Rotten Tomatoes scores?
+Which movie had the highest Opening Weekend gross?
+How many movies were released in each year?
+What is the average Audience Score for movies released by each Lead Studio?
+What is the average Domestic Gross for movies in each Genre?
+How many movies fall into each Genre category?
+Which movie had the highest Profitability?
+What is the average Budget for movies released each year?
+What is the average Audience Score for movies with a Rotten Tomatoes score above 70?
+How many movies were released by each Lead Studio in 2007?
+What is the total Domestic Gross for movies released by Disney?
+What is the average Opening Weekend gross for movies in each Genre?
+What is the total Foreign Gross for movies released by Warner Bros?
+How many theaters were open during the first week of each movie's release?
+What is the average Opening Weekend gross for movies released in 2007?
+How many movies had an Audience Score above 80?
+What is the total Budget for movies released by Paramount?
+How many movies were released in each Genre category in 2007?
+What is the average Rotten Tomatoes score for movies released by Sony?
+Which movie had the highest Profit compared to its Budget?
