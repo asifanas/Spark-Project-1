@@ -1,0 +1,25 @@
+1	What are the top 5 countries with the highest population density?
+2	Which country has the largest land area?
+3	What is the average GDP per capita among all countries?
+4	Which country has the highest CO2 emissions per capita?
+5	How many countries have a Rural population percentage above 50%?
+6	What is the average life expectancy across all countries?
+7	Which country has the highest Pump Price for gasoline?
+8	What is the total military expenditure of all countries combined?
+9	How many countries have a Health expenditure greater than 10% of GDP?
+10	Which country has the highest Internet users per 100 people?
+11	What is the average HIV prevalence among all countries?
+12	How many countries have a Hunger score greater than 20?
+13	Which country has the lowest Diabetes prevalence?
+14	What is the average Birth Rate across all countries?
+15	What is the average Death Rate across all countries?
+16	How many countries have an Elderly Population percentage above 10%?
+17	Which country has the highest Life Expectancy?
+18	What is the average Female Labor participation rate across all countries?
+19	How many countries have an Unemployment rate above 10%?
+20	What is the total Energy Use across all countries?
+21	What is the average Electricity consumption per capita?
+22	How many developed countries are there in the dataset?
+23	Which country has the lowest GDP per capita?
+24	How many countries have a Population density below 10?
+25	What is the average GDP per capita of developed countries?
