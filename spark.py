@@ -97,5 +97,25 @@ rotten.show()
 opening = df.orderBy(col('OpeningWeekend').desc()) \
         .select('Movie') \
         .limit(1)
-print(opening)
+opening.show()
 
+# How many movies were released in each year?
+eachYear = df.groupby('Year').count()
+eachYear = eachYear.withColumnRenamed("count", "number of movies")
+eachYear.show()
+
+# What is the average Audience Score for movies released by each Lead Studio?
+audscore = df.groupby('LeadStudio').agg(avg('AudienceScore').alias("average_audience_score"))
+audscore.show()
+
+# What is the average Domestic Gross for movies in each Genre?
+avgGenre = df.groupby('Genre').agg(round(avg('DomesticGross'), 2).alias("domestic gross for each genre"))
+avgGenre.show()
+
+# How many movies fall into each Genre category?
+catGenre = df.groupby('Genre').agg(count('Movie').alias('number of movies'))
+catGenre.show()
+
+# Which movie had the highest Profitability?
+mostProfit = df.select('Movie').orderBy(col('Profitability').desc()).limit(1)
+mostProfit.show()
