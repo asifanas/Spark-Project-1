@@ -23,3 +23,5 @@
 23	Calculate the percentage of matches won by each country in the year 1930.
 24	Determine the country with the highest average attendance per match.
 25	Identify the country with the highest average number of goals scored per match.
+
+edited
