@@ -23,3 +23,7 @@
 23	Which country has the lowest GDP per capita?
 24	How many countries have a Population density below 10?
 25	What is the average GDP per capita of developed countries?
+Question 1: First, let's identify the top 10 countries with the highest GDP per capita and their respective life expectancies. Then, we'll analyze the correlation between GDP per capita and life expectancy among these countries.
+
+Question 2: Next, we'll explore the relationship between GDP per capita and CO2 emissions per capita. We'll calculate the average CO2 emissions per capita for the top 5 countries with the highest GDP per capita and determine if there's any correlation between these two variables.
+

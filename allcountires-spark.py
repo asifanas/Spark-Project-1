@@ -61,3 +61,35 @@ avgBirth = df.agg(round(avg('BirthRate'), 2).alias('average_birthrate')).show()
 
 # 15	What is the average Death Rate across all countries?
 deathRate = df.agg(round(avg('DeathRate'), 2).alias('avg_deathRate')).show()
+
+# Question 1: First, let's identify the top 10 countries with the highest GDP per capita and their respective life expectancies. Then, we'll analyze the correlation between GDP per capita and life expectancy among these countries.
+
+highGDP = df.select('Country', 'LifeExpectancy').orderBy(col('GDP').desc()).limit(10).show()
+
+# Question 2: Next, we'll explore the relationship between GDP per capita and CO2 emissions per capita. We'll calculate the average CO2 emissions per capita for the top 5 countries with the highest GDP per capita and determine if there's any correlation between these two variables.
+
+highGDP= df.select('Country', round(col('GDP')/col('Population'), 2).alias('gdp_per_capita')) \
+    .orderBy(col('gdp_per_capita').desc()).limit(5)
+highGDP.show()
+
+highCO2 = df.select('Country', round(col('CO2')/col('Population'), 2).alias('co2_per_capita')) \
+    .orderBy(col('co2_per_capita').desc()).limit(5).show()
+
+corhigh = df.select('Country').orderBy(col('GDP').desc()).limit(5).show()
+
+# What is the average Female Labor participation rate across all countries?
+avgPop = df.agg(round(avg('FemaleLabor'), 2).alias('female_avg')).show()
+
+# How many developed countries are there in the dataset
+devCountry = df.where(col('Developed').isNotNull()).count()
+print(devCountry)
+
+nullCounty = df.where(col('Developed').isNull()).count()
+print(nullCounty)
+
+totalnull = df.count()
+print(totalnull)
+
+# 25	What is the average GDP per capita of developed countries?
+avgallGDP = df.where(col('Developed').isNotNull()) \
+        .agg(round(avg('GDP'), 2).alias('')).show()
