@@ -47,3 +47,17 @@ totalMil = df.agg(round(sum('Military'), 2).alias('military_exp'))
 totalMil.show()
 
 # 9	How many countries have a Health expenditure greater than 10% of GDP?
+gdpPer = df.select('Country').where(col('Health') > 10).limit(1).show()
+
+# 12	How many countries have a Hunger score greater than 20?
+hungerScore = df.select('Country') \
+        .where(col('Hunger') > 20).show()
+
+# 13	Which country has the lowest Diabetes prevalence?
+diaLeast = df.select('Country').orderBy(col('Diabetes')).limit(1).show()
+
+# 14	What is the average Birth Rate across all countries?
+avgBirth = df.agg(round(avg('BirthRate'), 2).alias('average_birthrate')).show()
+
+# 15	What is the average Death Rate across all countries?
+deathRate = df.agg(round(avg('DeathRate'), 2).alias('avg_deathRate')).show()
