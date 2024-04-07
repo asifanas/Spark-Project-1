@@ -1,0 +1,25 @@
+1	How many matches were played in the year 1930?
+2	What is the average attendance across all matches?
+3	Which stadium hosted the most matches?
+4	Which city hosted the highest number of matches?
+5	How many goals were scored in total across all matches?
+6	What is the average number of goals per match?
+7	Which referee officiated the most matches?
+8	Calculate the total number of goals scored by each team.
+9	Determine the match with the highest attendance.
+10	Find the match with the highest number of goals scored.
+11	Identify the team with the highest average number of goals scored per match.
+12	Calculate the average number of goals scored in matches held in "Montevideo".
+13	Determine the round with the highest attendance.
+14	Identify the year with the highest average attendance.
+15	Calculate the total number of goals scored in semi-final matches.
+16	Determine the match with the highest attendance in the final stage.
+17	Find the team with the highest average attendance in their matches.
+18	Identify the referee who officiated the most matches in the final stage.
+19	Calculate the percentage of matches won by each team.
+20	Determine the team with the highest percentage of matches won.
+21	Find the team with the highest goal difference (goals scored minus goals conceded).
+22	Identify the city with the highest average attendance per match.
+23	Calculate the percentage of matches won by each country in the year 1930.
+24	Determine the country with the highest average attendance per match.
+25	Identify the country with the highest average number of goals scored per match.
